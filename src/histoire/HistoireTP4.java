@@ -1,6 +1,7 @@
 package histoire;
 
 import personnages.Humain;
+import personnages.Commercant;
 
 public class HistoireTP4 {
     public static void main(String[] args) {
@@ -16,6 +17,14 @@ public class HistoireTP4 {
 
         prof.parler("J'ai " + prof.getArgent() + " sous en poche. Je vais pouvoir m'offrir un kimono à 50 sous.");
         prof.acheter("kimono", 50);
-    
+   
+        Commercant marco = new Commercant("Marco", 20);
+
+       
+        marco.direBonjour();
+        marco.seFaireExtorquer();
+        marco.recevoir(15); 
+        marco.boire();
 }
+    
 }
